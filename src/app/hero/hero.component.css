@@ -1,0 +1,27 @@
+section{
+    background-image: url("../../assets/images/herobg.svg");
+}
+
+.btn-register{
+    background: linear-gradient(90deg, #2986D9 0%, #1D3E5B 70.8%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+    color: #fff;
+}
+
+.btn-register:hover{
+    background: linear-gradient(90deg, #D9D9D9 37.83%, #FFF 66.59%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+    color: #1D3E5B;
+}
+
+.btn-buy{
+    background: linear-gradient(90deg, #D9D9D9 37.83%, #FFF 66.59%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+    color: #1D3E5B;
+}
+
+.btn-buy:hover{
+    background: linear-gradient(90deg, #2986D9 0%, #1D3E5B 70.8%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+    color: #fff;
+}
