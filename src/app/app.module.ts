@@ -10,6 +10,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProblemStatementComponent } from './problem-statement/problem-statement.component';
 import { SolutionComponent } from './solution/solution.component';
+import { CtaComponent } from './cta/cta.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SolutionComponent } from './solution/solution.component';
     LandingPageComponent,
     HeroComponent,
     ProblemStatementComponent,
-    SolutionComponent
+    SolutionComponent,
+    CtaComponent
   ],
   imports: [
     BrowserModule,
