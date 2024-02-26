@@ -1,0 +1,45 @@
+
+<nav class="flex bg-[transparent] items-center justify-between py-4 md:px-[80px] px-[20px]">
+    <a href="/" class="text-2xl font-[900] no-underline text-white">
+      <img src="./assets/images/_Avatar_.svg" alt="">
+    </a>
+  
+    <ul class="hidden md:flex items-center space-x-8 font-medium">
+      <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a class="active:text-[#8c7dff]" href="/">Solutions</a></li>
+      <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a class="active:text-[#8c7dff]" href="/">Benefits</a></li>
+      <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a class="active:text-[#8c7dff]" href="/">Team</a></li>
+      <li class="text-[#1D3E5B] px-6 py-2 button rounded-[6px] hover:text-black focus:text-black text-[12px] font-[500]"><a class="active:text-[#8c7dff]" href="/">Get Started</a></li>
+    </ul>
+  
+    <button (click)="toggleMobileMenu()" class="md:hidden text-[20px] text-[#1D3E5B] focus:outline-none">
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+  
+    <div
+      *ngIf="showMobileMenu"
+      class="fixed bg-[#F6F5F1] top-0 left-0 w-full z-40 h-screen px-[20px] py-4 overflow-y-auto md:hidden"
+    >
+      <button (click)="toggleMobileMenu()" class="absolute top-4 right-4 text-[40px] text-[#1D3E5B]">
+        &times;
+      </button>
+      <ul class="mt-8 space-y-4 text-lg font-medium">
+        <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a href="/">Solutions</a></li>
+        <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a href="/">Benefits</a></li>
+        <li class="text-[#1D3E5B] hover:text-black focus:text-black text-[16px] font-[700]"><a href="/">Team</a></li>
+        <li class="text-[#1D3E5B] w-1/2 flex justify-center px-6 py-2 button rounded-[6px] hover:text-black focus:text-black text-[12px] font-[500]"><a href="/">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>

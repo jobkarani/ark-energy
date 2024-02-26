@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'coming-soon'
+    redirectTo: 'home'
   },
-  {path:'coming-soon',component:ComingSoonComponent},
+  {path:'home',component:LandingPageComponent},
 ];
 
 @NgModule({

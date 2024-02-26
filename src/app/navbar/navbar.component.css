@@ -1,0 +1,8 @@
+.button{
+    background: linear-gradient(270deg, #D9D9D9 30.42%, #FFF 72.92%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+}
+.button:hover{
+    background: linear-gradient(270deg, #2986D9 22.92%, #1D3E5B 63.75%);
+    box-shadow: 0px 4px 4px 0px rgba(29, 62, 91, 0.25);
+}
