@@ -8,9 +8,10 @@ import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeroComponent } from './hero/hero.component';
-import { ProblemStatementComponent } from './problem-statement/problem-statement.component';
-import { SolutionComponent } from './solution/solution.component';
 import { CtaComponent } from './cta/cta.component';
+import { LearnMoreComponent } from './learn-more/learn-more.component';
+import { IRecsComponent } from './i-recs/i-recs.component';
+import { HowToStartComponent } from './how-to-start/how-to-start.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { CtaComponent } from './cta/cta.component';
     FooterComponent,
     LandingPageComponent,
     HeroComponent,
-    ProblemStatementComponent,
-    SolutionComponent,
-    CtaComponent
+    CtaComponent,
+    LearnMoreComponent,
+    IRecsComponent,
+    HowToStartComponent
   ],
   imports: [
     BrowserModule,

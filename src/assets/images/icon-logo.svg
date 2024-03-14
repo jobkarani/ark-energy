@@ -1,0 +1,21 @@
+<svg width="36" height="58" viewBox="0 0 36 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clip path group">
+<mask id="mask0_305_8480" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="58">
+<g id="clippath">
+<path id="Vector" d="M8.73 29.52H9.51L16.36 44.9C17.91 40.7 20.47 34.7 23.72 30.58C24.78 29.24 25.87 28.31 26.95 27.68H26.17L19.32 12.3C17.77 16.5 15.21 22.5 11.96 26.62C10.9 27.96 9.81 28.89 8.73 29.52ZM17.97 9.25L15.4 3.48L23.34 0L35.68 27.67L31.73 35.48C25.97 34.61 21.48 39.62 17.71 47.93L20.28 53.7L12.34 57.18L0 29.51L3.95 21.7C9.71 22.57 14.2 17.56 17.97 9.25Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_305_8480)">
+<g id="Group">
+<path id="Vector_2" d="M10.2337 -16.1286L-25.8711 40.7854L25.436 73.3333L61.5407 16.4193L10.2337 -16.1286Z" fill="url(#paint0_linear_305_8480)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_305_8480" x1="9.53824" y1="47.9009" x2="35.8043" y2="6.49617" gradientUnits="userSpaceOnUse">
+<stop stop-color="#46AD55"/>
+<stop offset="0.5" stop-color="#6AB32D"/>
+<stop offset="1" stop-color="#B4CB03"/>
+</linearGradient>
+</defs>
+</svg>

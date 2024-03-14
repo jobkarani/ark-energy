@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'manrope': ['Manrope', 'sans-serif'],
+        'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
