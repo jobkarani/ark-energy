@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -12,11 +11,11 @@ import { CtaComponent } from './cta/cta.component';
 import { LearnMoreComponent } from './learn-more/learn-more.component';
 import { IRecsComponent } from './i-recs/i-recs.component';
 import { HowToStartComponent } from './how-to-start/how-to-start.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     TeamComponent,
     FooterComponent,
     LandingPageComponent,
@@ -24,7 +23,8 @@ import { HowToStartComponent } from './how-to-start/how-to-start.component';
     CtaComponent,
     LearnMoreComponent,
     IRecsComponent,
-    HowToStartComponent
+    HowToStartComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
