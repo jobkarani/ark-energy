@@ -5,7 +5,7 @@
     </ng-container>
     
     <ng-container *ngIf="isloading$.value===false">
-        <nav class="flex bg-[transparent] items-center justify-between my-[20px] py-4 md:px-[80px] 2xl:px-[550px] px-[20px]">
+        <nav class="flex bg-[transparent] items-center justify-between my-[20px] py-4 md:px-[80px] 2xl:px-[700px] px-[20px]">
             <a href="/" class="text-2xl font-[900] no-underline text-white">
                 <img src="./assets/images/Logo Dark.png" alt="">
             </a>
@@ -37,7 +37,7 @@
         
             <div
                 *ngIf="showMobileMenu"
-                class="fixed bg-[#F6F5F1] top-0 left-0 w-full z-40 h-screen 2xl:px-[550px] px-[20px] py-4 overflow-y-auto xl:hidden"
+                class="fixed bg-[#F6F5F1] top-0 left-0 w-full z-40 h-screen 2xl:px-[700px] px-[20px] py-4 overflow-y-auto xl:hidden"
             >
                 <button (click)="toggleMobileMenu()" class="absolute top-4 right-4 text-[40px] text-[#1D3E5B]">
                 &times;
