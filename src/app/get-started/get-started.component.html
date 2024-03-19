@@ -1,0 +1,52 @@
+<div class="h-[100vh] grid xl:grid-cols-2 grid-cols-1 xl:pl-[80px] md:pl-[0] pl-[0]">
+    <div class="flex flex-col xl:gap-[100px] md:gap-[30px] gap-[20px] py-10 justify-center items-center">
+        <div class="flex justify-center items-center">
+            <a href="/">
+                <img src="./assets/images/Logo Dark.png" class="object-contain" alt="">
+            </a>
+        </div>
+        <div class="flex xl:text-[60px] md:text-[30px] text-[20px] md:font-[700] font-[500] ibm-plex-sans text-center">Start your journey to the I-REC Markets today</div>
+        <div class="xl:flex hidden justify-center items-center xl:text-[12px] md:text-[10px] text-[8px] manrope font-[700] leading-[20px]"><i class="fa-regular fa-copyright"></i> Africa Renewables Katalyst Private Limited 2024</div>
+    </div>
+    <div class="flex justify-end 2xl:jusify-center 2xl:items-center bg-[#5bc77333] py-[45px] md:pr-[80px] pr-[20px]">
+        <form method="post" action="" [formGroup]="plantOwnerFormGroup" class="flex flex-col gap-[12px] w-full xl:pl-[106px] md:pl-[80px] pl-[25px]">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-[15px]">
+                <div class="w-full">
+                    <label for="full_name" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
+                    <input type="text" name="full_name" value="" formControlName="full_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type full name" required>
+                </div>
+                <div class="w-full">
+                    <label for="email" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <input type="email" name="email" value="" formControlName="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type email" required>
+                </div>
+            </div>
+            <div class="w-full">
+                <label for="phone" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                <input type="text" name="phone" value="" formControlName="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type phone number" required>
+            </div>
+            <div class="w-full">
+                <label for="company" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Company Name</label>
+                <input type="text" name="company" value="" placeholder="Company" formControlName="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type company name" required>
+            </div>
+            <div class="w-full">
+                <label for="project_type" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Project Type</label>
+                <select formControlName="project_type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
+                    <option selected="">Select type</option> 
+                    <option *ngFor="let type of projectTypes" [value]="type.value">{{type.name}}</option>
+                </select>
+            </div>
+            <div class="w-full">
+                <label for="project_name" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Project Name</label>
+                <input type="text" name="project_name" value="" formControlName="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type project name" required>
+            </div>
+            <div class="w-full">
+                <label for="country" class="block mb-2 manrope text-sm font-medium text-gray-900 dark:text-white">Country</label>
+                <input type="text" name="country" value="" formControlName="country" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type country" required>
+            </div> 
+            <button (click)="onSubmit()" type="submit" class="flex justify-center items-center manrope  px-5 py-2.5 sm:mt-6 text-sm font-medium text-center text-white bg-[#0B1914] rounded-[10px] hover:bg-[#5BC773]">
+                Get Started
+            </button>
+        </form>
+    </div>
+    <div class="xl:hidden bg-[#5bc77333] flex justify-center items-center xl:text-[12px] md:text-[10px] text-[8px] manrope font-[700] leading-[20px]"><i class="fa-regular fa-copyright"></i> Africa Renewables Katalyst Private Limited 2024</div>
+</div>

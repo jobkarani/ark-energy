@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +16,9 @@ import { LearnMoreComponent } from './learn-more/learn-more.component';
 import { IRecsComponent } from './i-recs/i-recs.component';
 import { HowToStartComponent } from './how-to-start/how-to-start.component';
 import { LoaderComponent } from './loader/loader.component';
+import { GetStartedComponent } from './get-started/get-started.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +31,19 @@ import { LoaderComponent } from './loader/loader.component';
     LearnMoreComponent,
     IRecsComponent,
     HowToStartComponent,
-    LoaderComponent
+    LoaderComponent,
+    GetStartedComponent,
+    NavbarComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

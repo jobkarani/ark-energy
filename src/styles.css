@@ -19,3 +19,14 @@
     padding: 0;
     background-color: #FFFFFF;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.blue-snackbar {
+  position: relative !important;
+  top: -100vh !important;
+  left: 0;
+  --mdc-snackbar-container-color: rgb(178,235,75, 50%);
+  --mat-mdc-snack-bar-button-color: rgb(11,25,20);
+  --mdc-snackbar-supporting-text-color: rgb(11,25,20);
+}
