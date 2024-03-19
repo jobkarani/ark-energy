@@ -69,7 +69,7 @@ export class GetStartedComponent {
       const controls = this.plantOwnerFormGroup.controls;
       for (const name in controls) {
         if (controls[name].invalid) {
-          this.mainService.showSnackBarMessage(`Missing Field ${name}`);
+          // this.mainService.showSnackBarMessage(`Missing Field ${name}`);
         }
       }
       return;
@@ -82,9 +82,6 @@ export class GetStartedComponent {
       .subscribe(
         (data) => {
           this.router.navigate(['/success']);
-        },
-        (error) => {
-          this.mainService.showSnackBarMessage(error)
         }
       );
   }
